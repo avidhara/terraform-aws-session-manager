@@ -1,5 +1,5 @@
 module "kms" {
-  source                  = "app.terraform.io/foss-cafe/kms/aws"
+  source                  = "foss-cafe/kms/aws"
   version                 = "1.0.0"
   enabled                 = true
   name                    = lookup(var.kms_key, "name")
