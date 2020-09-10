@@ -46,7 +46,6 @@ module "ssm_resources" {
 
 | Name | Description |
 |------|-------------|
-| cloudwatch\_log\_group\_arn | n/a |
 | ssm\_cloudwatch\_log\_group\_arn | The Amazon Resource Name (ARN) specifying the log group for SSM |
 | ssm\_kms\_key\_arn | KMS key used for SSM |
 | ssm\_role\_arn | n/a |

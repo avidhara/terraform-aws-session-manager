@@ -1,7 +1,7 @@
 
-output "cloudwatch_log_group_arn" {
-  value = aws_cloudwatch_log_group.session_manager_log_group.arn
-}
+# output "cloudwatch_log_group_arn" {
+#   value = aws_cloudwatch_log_group.session_manager_log_group.arn
+# }
 
 output "ssm_kms_key_arn" {
   description = "KMS key used for SSM"
