@@ -49,3 +49,9 @@ variable "create_ssm_document" {
   description = "Do you want to create SSM Document"
   default     = true
 }
+
+variable "role_name" {
+  type        = string
+  description = "Name of the Role"
+  default     = ""
+}

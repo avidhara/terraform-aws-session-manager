@@ -39,6 +39,7 @@ module "ssm_resources" {
 | default\_user | operating system user name for starting sessions | `string` | `"ec2-user"` | no |
 | enable\_log\_to\_cloudwatch | Enable Session Manager to Log to CloudWatch Logs | `bool` | `true` | no |
 | kms\_key | KMS Key Details | `map(string)` | <pre>{<br>  "deletion_window_in_days": 7,<br>  "description": "CMK for cloudwath logs and session",<br>  "name": "ssm-cmk-key"<br>}</pre> | no |
+| role\_name | Name of the Role | `string` | `""` | no |
 | run\_as\_enabled | Do you want to use Specify Operating System user for sessions | `bool` | `true` | no |
 | tags | A map of tags to add to all resources | `map(string)` | `{}` | no |
 

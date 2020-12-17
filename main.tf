@@ -48,7 +48,7 @@ resource "aws_cloudwatch_log_group" "session_manager_log_group" {
 
 # Create EC2 Instance Role for SSM
 resource "aws_iam_role" "ssm_role" {
-  name = "SessionManagerRole"
+  name = format("%s-SessionManagerRole", var.role_name)
   path = "/"
   tags = var.tags
 
