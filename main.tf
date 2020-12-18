@@ -93,6 +93,6 @@ resource "aws_iam_role_policy_attachment" "SSM_s3_cwl_policy_attach" {
 }
 
 resource "aws_iam_instance_profile" "ssm_profile" {
-  name = "ssm_profile"
+  name = format("%s-instance-prodile", var.role_name)
   role = aws_iam_role.ssm_role.name
 }
