@@ -72,7 +72,7 @@ EOF
 
 
 resource "aws_iam_policy" "ssm_s3_cwl_access" {
-  name   = "SessionManagerPermissions"
+  name   = format("%s-SessionManagerPermissions", var.role_name)
   path   = "/"
   policy = data.aws_iam_policy_document.ssm_s3_cwl_access.json
 }
